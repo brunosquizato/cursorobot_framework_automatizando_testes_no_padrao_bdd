@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.1 (Python 3.12.6 on win32)" generated="2024-10-02T11:29:40.188268" rpa="false" schemaversion="5">
+<suite id="s1" name="Aula-2-Passou" source="c:\projetos\robot\arquivos-robot\Aula - 2\CT passou no teste\aula-2-passou.robot">
+<test id="s1-t1" name="Verificar se ao preencher corretamente o formulário os dados são inseridos corretamente na lista e se um novo card é criado no time escolhido" line="19">
+<kw name="Dado que eu acesse o Organo">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-10-02T11:29:40.658284" level="INFO">Opening browser 'Chrome' to base url 'http://localhost:3000/'.</msg>
+<arg>url=http://localhost:3000/</arg>
+<arg>browser=Chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-10-02T11:29:40.646260" elapsed="3.776094"/>
+</kw>
+<status status="PASS" start="2024-10-02T11:29:40.646260" elapsed="3.776094"/>
+</kw>
+<kw name="E preencha os campos do formulário">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-10-02T11:29:44.439125" level="INFO">Typing text 'Akemi' into text field 'id:form-nome'.</msg>
+<arg>id:form-nome</arg>
+<arg>Akemi</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-10-02T11:29:44.435691" elapsed="0.512361"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-10-02T11:29:44.948052" level="INFO">Typing text 'Desenvolvedora' into text field 'id:form-cargo'.</msg>
+<arg>id:form-cargo</arg>
+<arg>Desenvolvedora</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-10-02T11:29:44.948052" elapsed="0.395906"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-10-02T11:29:45.343958" level="INFO">Typing text 'https://picsum.photos/200/300' into text field 'id:form-imagem'.</msg>
+<arg>id:form-imagem</arg>
+<arg>https://picsum.photos/200/300</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-10-02T11:29:45.343958" elapsed="0.537295"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-10-02T11:29:45.885506" level="INFO">Clicking element 'class:lista-suspensa'.</msg>
+<arg>class:lista-suspensa</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-10-02T11:29:45.884757" elapsed="0.190350"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-10-02T11:29:46.075107" level="INFO">Clicking element '//option[contains(.,'Programação')]'.</msg>
+<arg>//option[contains(.,'Programação')]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-10-02T11:29:46.075107" elapsed="0.133297"/>
+</kw>
+<status status="PASS" start="2024-10-02T11:29:44.434954" elapsed="1.773450"/>
+</kw>
+<kw name="E clique no botão &quot;Criar Card&quot;">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-10-02T11:29:46.208404" level="INFO">Clicking element 'id:form-botao'.</msg>
+<arg>id:form-botao</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-10-02T11:29:46.208404" elapsed="0.196615"/>
+</kw>
+<status status="PASS" start="2024-10-02T11:29:46.208404" elapsed="0.196615"/>
+</kw>
+<kw name="Então identificar o card no time esperado">
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<msg time="2024-10-02T11:29:46.484959" level="INFO">Element 'class:colaborador' is displayed.</msg>
+<arg>class:colaborador</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="PASS" start="2024-10-02T11:29:46.405019" elapsed="0.086468"/>
+</kw>
+<status status="PASS" start="2024-10-02T11:29:46.405019" elapsed="0.087494"/>
+</kw>
+<status status="PASS" start="2024-10-02T11:29:40.646260" elapsed="5.846253"/>
+</test>
+<status status="PASS" start="2024-10-02T11:29:40.201727" elapsed="6.290786"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Aula-2-Passou">Aula-2-Passou</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

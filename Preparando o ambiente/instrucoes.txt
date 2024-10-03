@@ -1,0 +1,23 @@
+1 - Instalar executável do Python
+2 - Instalar executável do node
+3 - Instalar Robot:
+------https://robotframework.org/?tab=1#getting-started
+------feche e abra o cmd antes de rodar o comando
+------pip install robotframework
+4 - instalar seleniumLibrary para Robot
+------https://github.com/robotframework/SeleniumLibrary
+------No CMD:
+------pip install --upgrade robotframework-seleniumlibrary
+5 - Instalar chromedriver
+------Baixar executavel
+------Apesar do meu sistema ser x64 eu baixei a versão x32
+------Recortar executavel e instalar na pasta System32 do Windows
+------C:\Windows\System32
+6 - Instalar o site onde os testes serão executados (Organo)
+------copiar a pasta do organo(site) para o destino onde ele irá rodar
+------abrir o cmd
+------digitar os comandos:
+------cd "local onde está a pasta do organo"
+------npm install
+------npm start
+------esse ultimo serve para startar o site

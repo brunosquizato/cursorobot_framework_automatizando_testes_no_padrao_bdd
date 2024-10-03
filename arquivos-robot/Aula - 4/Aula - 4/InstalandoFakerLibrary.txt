@@ -1,0 +1,9 @@
+Fazendo o FakerLibrary funcionar:
+
+comandos para instalar a FakerLibrary e suas dependencias:
+pip install robotframework-faker
+pip install --upgrade setuptools
+
+Limpe os caches do Robot Framework no Visual Studio Code:
+Vá para a paleta de comandos (Ctrl+Shift+P ou Cmd+Shift+P no macOS).
+Digite e selecione “Robot Framework: Clear caches and restart”.
